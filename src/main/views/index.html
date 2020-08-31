@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>guest book</title>
+    <script src="../js/loadMessagesScript.js" defer></script>
+    <script src="../js/index.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <p>
+    <h1>Guest book</h1></p>
+    <form id="box_frame">
+        <label>
+            <input type="text" placeholder="Enter your name" name="name" required>
+        </label>
+        <br/>
+        <label>
+            <textarea name="message" placeholder="Enter your message" rows="10" cols="50" required></textarea>
+        </label>
+        <br/>
+        <button id="send-message" type="submit">Send</button>
+    </form>
+
+    <table class="messages">
+        <tbody class="tbody"></tbody>
+    </table>
+</div>
+</body>
+</html>
